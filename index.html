@@ -6,19 +6,13 @@
     <script src="scripts.js"></script>
     <title>Assignment 1</title>
 </head>
-<!--<style>-->
-<!--    .card {-->
-<!--        border: black 1px;-->
-<!--        background: aquamarine;-->
-<!--    }-->
-<!--</style>-->
 <body>
 
 <div class="card">
     <h1>Subscribe Now!</h1>
     <p>Email address</p>
-    <input type="text" id="email" onfocusout="validateEmail(document.getElementById('email').value)">
-    <p id="placeholder"></p>
+    <input type="text" id="email" onfocusout="getValidStatus()">
+    <p id="errorTxt"></p>
     <button>Subscribe</button>
 </div>
 
