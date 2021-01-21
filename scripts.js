@@ -1,15 +1,8 @@
 
 var validateEmail = function(email) {
     var pattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (pattern.test(email))
-    {
-        return (true);
-    }
-    else
-    {
-        return (false);
-    }
-}
+    return (pattern.test(email));
+};
 
 var getValidStatus = function() {
     if (validateEmail(document.getElementById("email").value))
@@ -22,4 +15,12 @@ var getValidStatus = function() {
         document.getElementById("errorTxt").innerHTML = "A valid email is required";
         document.getElementById("email").classList.add("errorStyle");
     }
-}
+};
+
+var buttonClick = function() {
+    if (validateEmail(document.getElementById("email").value))
+    {
+        document.getElementById("form").style.display = "none";
+        document.getElementById("msg").style.display = "block";
+    }
+};

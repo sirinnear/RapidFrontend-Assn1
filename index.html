@@ -9,12 +9,20 @@
 <body>
 
 <div class="card">
-    <h1>Subscribe Now!</h1>
-    <p>Email address</p>
-    <input type="text" id="email" onfocusout="getValidStatus()">
-    <p id="errorTxt"></p>
-    <button>Subscribe</button>
+    <div id="form">
+        <h1>Subscribe Now!</h1>
+        <p>Email address</p>
+        <input type="text" id="email" onfocusout="getValidStatus()">
+        <p id="errorTxt"></p>
+        <button onclick="buttonClick()">Subscribe</button>
+    </div>
+
+    <div id="msg">
+        <h2>Thank you</h2>
+        <p>Your subscription was a success!</p>
+    </div>
 </div>
+
 
 </body>
 </html>

@@ -33,6 +33,10 @@ input[type="text"].errorStyle:focus {
     outline: none;
 }
 
+input[type="text"].errorStyle {
+    border: red solid 1px;
+}
+
 #errorTxt {
     color: red;
     font-size: 14px;
@@ -46,4 +50,13 @@ button {
     background: rgb(39, 167, 69);
     color: white;
     margin-top: 10px;
+}
+
+#msg {
+    display: none;
+    border: rgba(0, 155, 22, 0.14) solid 1px;
+    border-radius: 5px;
+    background: rgba(0, 155, 22, 0.14);
+    padding: 10px;
+    color: #104b10;
 }
