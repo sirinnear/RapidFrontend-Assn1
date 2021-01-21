@@ -52,6 +52,7 @@ button {
     background: rgb(39, 167, 69);
     color: white;
     margin-top: 10px;
+    outline: none;
 }
 
 #msg {
