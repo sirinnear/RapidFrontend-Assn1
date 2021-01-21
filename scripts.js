@@ -9,10 +9,12 @@ var getValidStatus = function() {
     {
         document.getElementById("errorTxt").innerHTML = " ";
         document.getElementById("email").classList.remove("errorStyle");
+        document.getElementById("email").classList.add("validStyle");
     }
     else
     {
         document.getElementById("errorTxt").innerHTML = "A valid email is required";
+        document.getElementById("email").classList.remove("validStyle");
         document.getElementById("email").classList.add("errorStyle");
     }
 };
